@@ -1,0 +1,14 @@
+name: 'secrets'
+description: 'Get variable secrets[name]'
+author: 'TaYaKi71751'
+inputs:
+  secrets:
+    required: true
+    description: '```${{ toJson(secrets) }}``` on this'
+    default: '{}'
+  name:
+    required: true
+    description: 'name for secrets[name]'
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
